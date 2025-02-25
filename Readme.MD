@@ -35,3 +35,14 @@ Clone git repository (private one)
  Reload the configuration from the drive
 
 ![](Images/20250316130840.png)
+
+Create credentials
+
+![](Images/20250316132333.png)
+
+Click global
+
+![](Images/20250316132430.png)
+
+SSH Username with private key
+
