@@ -90,11 +90,11 @@ HTTP Error 500.19 - IIS 7.5 Error 0x8007000d
 
 https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-aspnetcore-9.0.3-windows-hosting-bundle-installer
 
-
+```
 Master configuration
 install-module productivitytools.masterconfiguration
-Set-MasterConfiguration -Directory C:\Bin\Home.Configuration
-
+Set-MasterConfiguration -Directory C:\Bin\GitHub\Home.Configuration
+```
 Restart
 
 ## Database backup
