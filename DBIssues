@@ -1,0 +1,10 @@
+Conflicting file relocations have been specified for file 'PTTrips'. Only a single WITH MOVE clause should be specified for any logical file name.
+
+Remember to have log in the second line
+
+RESTORE DATABASE PTTrips  
+FROM DISK = 'c:\backup\PTTrips.bak'
+with move 'PTTrips' TO 'C:\Program Files\Microsoft SQL Server\MSSQL16.SQL2022\MSSQL\DATA\PTTrips.mdf',
+ move 'PTTrips_Log' TO 'C:\Program Files\Microsoft SQL Server\MSSQL16.SQL2022\MSSQL\DATA\PTTrips_log.ldf',
+ REPLACE,
+ STATS=10 
