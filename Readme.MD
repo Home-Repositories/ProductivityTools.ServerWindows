@@ -111,3 +111,18 @@ DECLARE @CleanupTime int                   = 168
 Add the trigger to the **Database Backup - USER_DATABASES** Job
 
 ![](Images/20250322113516.png)
+
+
+## [IIS APPPOOL\PTTrips] users
+
+Jenkins files contain step that adds IIS users to the SQL. It could happen that during this step "Permission denied" is returned.
+
+To fix that, check under what user pipeline is executed (it is in the log of the pipeline)
+```
+C:\ProgramData\Jenkins\.jenkins\workspace\PTTrips.Api>whoami
+zarz�dzanie nt\system
+```
+
+And add the ```Sysadmin``` role for that user
+
+![](Images/20250402182431.png)
