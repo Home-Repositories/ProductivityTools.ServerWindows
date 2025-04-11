@@ -13,6 +13,13 @@ git config --global user.email pwujczyk@gmail.com
 git config --global user.name "Pawel Wujczyk"
 ```
 
+### Powershell
+```
+git clone git@github.com:Home-Repositories/Powershell.git
+.\WindowsServer.ps1
+instsall-module az
+```
+
  git config --global --add safe.directory C:/ProgramData/Jenkins/.jenkins/jobs
 
 ### SQL Server
